@@ -2,7 +2,7 @@
   <div class="container">
     <slot name="back"></slot>
     {{title}}
-    <slot name="btn"></slot>
+    <slot name="Btn"></slot>
   </div>
 </template>
 

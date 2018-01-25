@@ -2,7 +2,8 @@ const y18m1 = [
   {
     type:'score',
     score:10,
-    bgColor:''
+    bgColor:'',
+    dataList:[],        //里面是对象，需要的数据：头像url，id
   },
   {
     type:'word',
@@ -11,27 +12,32 @@ const y18m1 = [
   {
     type:'score',
     score:9.5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:9,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:8.5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:8,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:7.5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'word',
@@ -40,7 +46,8 @@ const y18m1 = [
   {
     type:'score',
     score:7,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'word',
@@ -49,27 +56,32 @@ const y18m1 = [
   {
     type:'score',
     score:6.5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:6,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:5.5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:4.5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'word',
@@ -78,22 +90,26 @@ const y18m1 = [
   {
     type:'score',
     score:4,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:3.5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:3,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:2.5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'word',
@@ -102,27 +118,32 @@ const y18m1 = [
   {
     type:'score',
     score:2,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:1.5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:1,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:0.5,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'score',
     score:0,
-    bgColor:''
+    bgColor:'',
+    dataList:[],
   },
   {
     type:'word',
