@@ -6,7 +6,7 @@ import {IndexComponent} from "./page/index/index.component";
 const routes: Routes = [
   {
     path: '/',
-    component: IndexComponent
+    component: IndexComponent,
   }
 ];
 
