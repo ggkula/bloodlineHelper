@@ -1,0 +1,26 @@
+.body{
+  height: 100%;
+  width: 100%;
+  .card{
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    .item{
+      width: 20vw;
+      margin: 0 5vw;
+      height: 200px;
+      line-height: 200px;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover{
+        margin-top: -10px;
+        box-shadow: 0 10px 10px 2px #bbb;
+      }
+    }
+  }
+}

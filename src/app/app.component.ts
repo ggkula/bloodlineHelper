@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BasicService} from "./server/basic.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blHelper';
+  constructor(
+      private basicService : BasicService,
+  ) {
+    window.innerWidth > 500 ? this.basicService.browser.next(true) : this.basicService.browser.next(false);
+  }
 }

@@ -1,3 +1,5 @@
-<p>
-  index works!
-</p>
+<section class="body">
+  <div class="card">
+    <div *ngFor="let item of card" [routerLink]="item.route" [style.background]="item.color" class="item">{{item.name}}</div>
+  </div>
+</section>

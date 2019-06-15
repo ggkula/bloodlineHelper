@@ -10,13 +10,33 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { IndexComponent } from './page/index/index.component';
+import { HeaderComponent } from './component/header/header.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { ListComponent } from './page/list/list.component';
+import { SingleResolveComponent } from './page/single-resolve/single-resolve.component';
+import { NewPlayerComponent } from './page/new-player/new-player.component';
+import { ModalComponent } from './component/modal/modal.component';
+import { ResolveComponent } from './component/resolve/resolve.component';
+import { ListDetailComponent } from './page/list-detail/list-detail.component';
+import { AboutUsComponent } from './page/about-us/about-us.component';
+import { SupportUsComponent } from './page/support-us/support-us.component';
 
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    HeaderComponent,
+    FooterComponent,
+    ListComponent,
+    SingleResolveComponent,
+    NewPlayerComponent,
+    ModalComponent,
+    ResolveComponent,
+    ListDetailComponent,
+    AboutUsComponent,
+    SupportUsComponent
   ],
   imports: [
     BrowserModule,
