@@ -10,15 +10,15 @@ const theData: EachData = {
     job: '牧师',
     transfer: ['秘牧', '武姬', '执政官'],
     camp: '旅人',
-    avatar: '../../../assets/avatar/dark/奥.png',
+    avatar: '/assets/avatar/dark/奥.png',
     card: [{
         type: '20攻击秘牧奥里西斯',
-        src: '../../../assets/card/dark/奥.jpg'
+        src: '/assets/card/dark/奥.jpg'
     }, {
         type: '20攻击舞姬奥里西斯',
-        src: '../../../assets/card/dark/奥w.jpg'
+        src: '/assets/card/dark/奥w.jpg'
     }],
-    skill: '../../../assets/skill/dark/奥.png',
+    skill: '/assets/skill/dark/奥.png',
     resolves: [
         {
             auth: '寒寒',

@@ -20,6 +20,7 @@ import { ListDetailComponent } from './page/list-detail/list-detail.component';
 import { AboutUsComponent } from './page/about-us/about-us.component';
 import { SupportUsComponent } from './page/support-us/support-us.component';
 import { RankingComponent } from './component/ranking/ranking.component';
+import { DlPicDirective } from './directive/dl-pic.directive';
 
 registerLocaleData(zh);
 
@@ -36,7 +37,8 @@ registerLocaleData(zh);
     ListDetailComponent,
     AboutUsComponent,
     SupportUsComponent,
-    RankingComponent
+    RankingComponent,
+    DlPicDirective
   ],
   imports: [
     BrowserModule,

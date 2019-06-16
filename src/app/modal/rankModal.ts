@@ -2,6 +2,7 @@
  * title: string 节奏榜标题
  * year: number 节奏榜年份
  * month: number 节奏榜月份
+ * download: 下载链接
  * rank: import object[]
  */
 
@@ -9,6 +10,7 @@ export interface RankModal {
     title: string,
     year: number,
     month: number,
+    download: string,
     rank: Rank[],
 }
 
