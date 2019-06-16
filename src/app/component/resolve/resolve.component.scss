@@ -4,18 +4,20 @@
 @media screen and (min-width:481px) {
   .skill {
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     height: calc(100vh - 245px);
     overflow: scroll;
-
     &::-webkit-scrollbar {
       display: none;
     }
   }
   .card {
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     height: calc(100vh - 305px);
     overflow: scroll;
-
     &::-webkit-scrollbar {
       display: none;
     }
