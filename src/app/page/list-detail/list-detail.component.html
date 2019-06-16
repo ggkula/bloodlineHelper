@@ -1,5 +1,5 @@
-<p>
-
-
-  建设中！
-</p>
+<div class="box">
+  <app-ranking class="left" (emitId)="getSelectedId($event)"></app-ranking>
+  <app-resolve class="right" [selectedId]='selectedId'></app-resolve>
+</div>
+<div class="smallBox"></div>

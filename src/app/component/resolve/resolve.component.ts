@@ -9,7 +9,7 @@ import resolve from '../../../data/data'
 export class ResolveComponent implements OnInit {
   data = resolve;
   selectedCard;
-  @Input() id = 1;
+  @Input() selectedId;
 
   constructor() { }
 
@@ -17,6 +17,10 @@ export class ResolveComponent implements OnInit {
   }
 
   ngOnChanges(value) {
-
+    console.log(value.selectedId);
+    if(value.selectedId.currentValue) {
+      this.selectedCard = resolve[value.selectedId.currentValue];
+      console.log(value.selectedId.currentValue, this.selectedCard);
+    }
   }
 }
