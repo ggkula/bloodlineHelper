@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import resolve from '../../../data/data'
 
 @Component({
   selector: 'app-resolve',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resolve.component.scss']
 })
 export class ResolveComponent implements OnInit {
+  data = resolve;
+  selectedCard;
+  @Input() id = 1;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  ngOnChanges(value) {
+
+  }
 }

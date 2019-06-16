@@ -15,11 +15,11 @@ import { FooterComponent } from './component/footer/footer.component';
 import { ListComponent } from './page/list/list.component';
 import { SingleResolveComponent } from './page/single-resolve/single-resolve.component';
 import { NewPlayerComponent } from './page/new-player/new-player.component';
-import { ModalComponent } from './component/modal/modal.component';
 import { ResolveComponent } from './component/resolve/resolve.component';
 import { ListDetailComponent } from './page/list-detail/list-detail.component';
 import { AboutUsComponent } from './page/about-us/about-us.component';
 import { SupportUsComponent } from './page/support-us/support-us.component';
+import { RankingComponent } from './component/ranking/ranking.component';
 
 registerLocaleData(zh);
 
@@ -32,11 +32,11 @@ registerLocaleData(zh);
     ListComponent,
     SingleResolveComponent,
     NewPlayerComponent,
-    ModalComponent,
     ResolveComponent,
     ListDetailComponent,
     AboutUsComponent,
-    SupportUsComponent
+    SupportUsComponent,
+    RankingComponent
   ],
   imports: [
     BrowserModule,
