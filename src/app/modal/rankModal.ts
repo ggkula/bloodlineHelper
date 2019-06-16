@@ -23,7 +23,7 @@ export interface RankModal {
 export interface Rank {
     type: 'score' | 'describe',
     score?: number,
-    sort?: number[],
+    sorts?: number[],
     bgc?: string,
     describe?: string
 }

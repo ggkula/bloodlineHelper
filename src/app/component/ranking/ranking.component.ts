@@ -1,4 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {RankModal} from "../../modal/rankModal";
+import rankList from "../../../data/rankList/rank";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-ranking',
@@ -6,9 +9,18 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
   styleUrls: ['./ranking.component.scss']
 })
 export class RankingComponent implements OnInit {
+  rankList: RankModal[] = rankList;
+  rank: RankModal;
+  rankId: number;
   @Output() emitId = new EventEmitter<number>();
 
-  constructor() { }
+  constructor(
+      private route: ActivatedRoute,
+  ) {
+    this.rankId = parseInt(this.route.snapshot.paramMap.get('id'));
+    this.rank = this.rankList[this.rankId];
+    console.log(this.rank);
+  }
 
   ngOnInit() {
   }

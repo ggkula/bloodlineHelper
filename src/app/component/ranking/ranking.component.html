@@ -1,17 +1,22 @@
 <div class="box">
-  <h4>节奏榜demo</h4>
+  <h4>{{rank.title}}</h4>
   <div class="ranking">
     <div class="score">
-      <div class="line">
+      <div class="line" *ngFor="let item of rank.rank">
         <div class="item">
-          9.5
+          {{item.score}}
         </div>
       </div>
     </div>
     <div class="avatarList">
-      <div class="line">
-        <div class="item dark" nz-popover [nzContent]="'奥里西斯'" (click)="selectItem(1)">
-          <img class="avatar" src="../../../assets/avatar/dark/奥.png" alt="奥里西斯">
+      <div class="line" *ngFor="let item of rank.rank">
+        <div *ngIf="item.type === 'score'">
+          <div class="item dark" *ngFor="let card of item.sorts" nz-popover [nzContent]="'奥里西斯'" (click)="selectItem(1)">
+            <img class="avatar" src="../../../assets/avatar/dark/奥.png" alt="奥里西斯">
+          </div>
+        </div>
+        <div *ngIf="item.type === 'describe'">
+          {{item.describe}}
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ import { EachData } from '../../modal/dataModal'
   styleUrls: ['./resolve.component.scss']
 })
 export class ResolveComponent implements OnInit {
-  data = resolve;
+  data: EachData[] = resolve;
   selectedCard: EachData;
   @Input() selectedId;
 
@@ -18,12 +18,10 @@ export class ResolveComponent implements OnInit {
   }
 
   ngOnChanges(value) {
-    console.log(value.selectedId);
     if(value.selectedId.currentValue) {
       this.selectedCard = this.data.filter(v => {
         return v.id === value.selectedId.currentValue
       })[0];
-      console.log(value.selectedId.currentValue, this.selectedCard);
     }
   }
 }
