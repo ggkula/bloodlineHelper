@@ -2,10 +2,13 @@
   <nz-tabset *ngIf="selectedId" [nzTabPosition]="'top'" [nzType]="'card'">
     <nz-tab nzTitle="单卡评测">
       <nz-tabset>
-        <nz-tab *ngFor="let item of selectedCard.resolve" [nzTitle]="'作者：' + item.auth">
-          评测日期：{{item.date}}
-          <br>
-          <p *ngFor="let para of item.paragraph">{{para}}</p>
+        <nz-tab *ngFor="let item of selectedCard.resolves" [nzTitle]="'作者：' + item.auth">
+          <div class="resolve">
+            评测日期：{{item.date}}
+            <br>
+            <br>
+            <p *ngFor="let para of item.paragraph" class="para">{{para}}</p>
+          </div>
         </nz-tab>
       </nz-tabset>
     </nz-tab>

@@ -1,21 +1,18 @@
-/* 19年5月节奏榜，
-* Type: object[]
-* type：score / describe 单行类型：分数或说明。
-* score: 本行的分数
-* sort：本行节奏榜卡片排序，按照id排序。
-* bgc：本行的背景颜色
-* describe： 若类型为describe，则显示的描述文字
-* */
+// 19年5月节奏榜，
 
-export default [
+import {Rank} from "../../../app/modal/rankModal";
+
+const rank1905: Rank[] = [
     {
-        type: '',
+        type: 'score',
         score: 10,
         sort: [],
         bgc: ''
     },
     {
-        type: '',
+        type: 'describe',
         describe: '',
     }
 ]
+
+export default rank1905

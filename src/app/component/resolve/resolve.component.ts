@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import resolve from '../../../data/data'
+import { EachData } from '../../modal/dataModal'
 
 @Component({
   selector: 'app-resolve',
@@ -8,7 +9,7 @@ import resolve from '../../../data/data'
 })
 export class ResolveComponent implements OnInit {
   data = resolve;
-  selectedCard;
+  selectedCard: EachData;
   @Input() selectedId;
 
   constructor() { }
@@ -19,7 +20,9 @@ export class ResolveComponent implements OnInit {
   ngOnChanges(value) {
     console.log(value.selectedId);
     if(value.selectedId.currentValue) {
-      this.selectedCard = resolve[value.selectedId.currentValue];
+      this.selectedCard = this.data.filter(v => {
+        return v.id === value.selectedId.currentValue
+      })[0];
       console.log(value.selectedId.currentValue, this.selectedCard);
     }
   }

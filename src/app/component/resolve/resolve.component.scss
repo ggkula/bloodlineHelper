@@ -1,7 +1,18 @@
 .img {
   width: 100%;
 }
+.para{
+  margin-bottom: 6px;
+}
 @media screen and (min-width:481px) {
+  .resolve{
+    width: 100%;
+    height: calc(100vh - 305px);
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
   .skill {
     width: 100%;
     max-width: 500px;

@@ -1,17 +1,12 @@
 /* 节奏榜整合
-* Type object[]
 * 每次都把最新的节奏榜放在第一个。
-*
-* title: string 节奏榜标题
-* year: number 节奏榜年份
-* month: number 节奏榜月份
-* rank: import object[]
-*
 * */
+
+import {RankModal} from '../../app/modal/rankModal'
 
 import rank1905 from './rank/1905'
 
-export default [
+const rankList: RankModal[] = [
     {
         title: '19年5月节奏榜',
         year: 19,
@@ -19,3 +14,5 @@ export default [
         rank: rank1905
     }
 ]
+
+export default rankList
