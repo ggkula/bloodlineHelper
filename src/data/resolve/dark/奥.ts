@@ -2,7 +2,7 @@ import {EachData} from '../../../app/modal/dataModal'
 
 const theData: EachData = {
     name: '奥里西斯',
-    id: 1,
+    id: 0,
     attr: {
         key: 'dark',
         value: '暗'

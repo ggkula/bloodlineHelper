@@ -18,10 +18,9 @@ export class ResolveComponent implements OnInit {
   }
 
   ngOnChanges(value) {
-    if(value.selectedId.currentValue) {
-      this.selectedCard = this.data.filter(v => {
-        return v.id === value.selectedId.currentValue
-      })[0];
+    console.log(value.selectedId.currentValue);
+    if(value.selectedId.currentValue + 1 > 0) {
+      this.selectedCard = this.data[value.selectedId.currentValue];
     }
   }
 }

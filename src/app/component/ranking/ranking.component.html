@@ -1,7 +1,7 @@
 <div class="box">
   <h4>
     {{rank.title}}
-    <button nz-button appDlPic nzType="primary" nzSize="small" [name]="rank.title" [path]="rank.download">下载本月节奏榜</button>
+<!--    <button nz-button appDlPic nzType="primary" nzSize="small" [name]="rank.title" [path]="rank.download">下载本月节奏榜</button>-->
   </h4>
   <div class="ranking">
     <div class="score">
@@ -14,8 +14,8 @@
     <div class="avatarList">
       <div class="line" *ngFor="let item of rank.rank">
         <div *ngIf="item.type === 'score'">
-          <div class="item dark" *ngFor="let card of item.sorts" nz-popover [nzContent]="'奥里西斯'" (click)="selectItem(1)">
-            <img class="avatar" src="/assets/avatar/dark/奥.png" alt="奥里西斯">
+          <div class="item dark" *ngFor="let card of item.detail" nz-popover [nzContent]="card.name" (click)="selectItem(card.id)">
+            <img class="avatar" [src]="card.avatar" [alt]="card.name">
           </div>
         </div>
         <div *ngIf="item.type === 'describe'">
@@ -25,3 +25,11 @@
     </div>
   </div>
 </div>
+
+<nz-modal nzTitle="卡牌详情"
+          [(nzVisible)]="openModal"
+          [nzFooter]="null" [nzStyle]="{ top: '40px' }"
+          [nzBodyStyle]="{height: '80vh',overflow: 'scroll'}"
+          (nzOnCancel)="closeModalFunc()">
+  <app-resolve class="right" [selectedId]='selectedId'></app-resolve>
+</nz-modal>

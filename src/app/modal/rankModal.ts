@@ -6,6 +6,8 @@
  * rank: import object[]
  */
 
+import {EachData} from "./dataModal";
+
 export interface RankModal {
     title: string,
     year: number,
@@ -25,6 +27,7 @@ export interface RankModal {
 export interface Rank {
     type: 'score' | 'describe',
     score?: number,
+    detail?: EachData[],
     sorts?: number[],
     bgc?: string,
     describe?: string

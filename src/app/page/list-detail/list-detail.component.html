@@ -1,5 +1,7 @@
-<div class="box">
+<div class="box" *ngIf="windowSize">
   <app-ranking class="left" (emitId)="getSelectedId($event)"></app-ranking>
   <app-resolve class="right" [selectedId]='selectedId'></app-resolve>
 </div>
-<div class="smallBox"></div>
+<div class="smallBox" *ngIf="!windowSize">
+  <app-ranking class="rank" (emitId)="getSelectedId($event)"></app-ranking>
+</div>

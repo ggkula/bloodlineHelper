@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
+import {BasicService} from "../../server/basic.service";
 
 @Component({
   selector: 'app-list-detail',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListDetailComponent implements OnInit {
   selectedId: number;
+  windowSize: boolean;
 
-  constructor() { }
+  constructor(
+      private basicService : BasicService,
+  ) { }
 
   ngOnInit() {
   }
@@ -17,4 +21,7 @@ export class ListDetailComponent implements OnInit {
     this.selectedId = $event;
   }
 
+  ngDoCheck() {
+    this.windowSize = this.basicService.browser.getValue();
+  }
 }
