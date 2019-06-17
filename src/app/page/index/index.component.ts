@@ -10,7 +10,8 @@ export class IndexComponent implements OnInit {
     {
       name: '最新节奏榜',
       route: '/listDetail',
-      color: '#DDC589'
+      color: '#DDC589',
+      id: true
     },
     {
       name: '单卡评测',
