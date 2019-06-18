@@ -21,6 +21,7 @@ import { AboutUsComponent } from './page/about-us/about-us.component';
 import { SupportUsComponent } from './page/support-us/support-us.component';
 import { RankingComponent } from './component/ranking/ranking.component';
 import { DlPicDirective } from './directive/dl-pic.directive';
+import { BorderDirective } from './directive/border.directive';
 
 registerLocaleData(zh);
 
@@ -38,7 +39,8 @@ registerLocaleData(zh);
     AboutUsComponent,
     SupportUsComponent,
     RankingComponent,
-    DlPicDirective
+    DlPicDirective,
+    BorderDirective
   ],
   imports: [
     BrowserModule,

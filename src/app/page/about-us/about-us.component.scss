@@ -1,0 +1,8 @@
+.body{
+  padding:30px;
+  height: calc(100vh - 128px);
+  overflow: scroll;
+  .card{
+    margin-bottom: 10px;
+  }
+}

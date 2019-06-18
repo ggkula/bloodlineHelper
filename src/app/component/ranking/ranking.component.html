@@ -12,14 +12,16 @@
       </div>
     </div>
     <div class="avatarList">
-      <div class="line" *ngFor="let item of rank.rank">
-        <div *ngIf="item.type === 'score'">
-          <div class="item dark" *ngFor="let card of item.detail" nz-popover [nzContent]="card.name" (click)="selectItem(card.id)">
-            <img class="avatar" [src]="card.avatar" [alt]="card.name">
+      <div class="avatarListBox" [ngStyle]="{width: maxWidth * 80 + 'px'}">
+        <div class="line" *ngFor="let item of rank.rank">
+          <div *ngIf="item.type === 'score'">
+            <div class="item" *ngFor="let card of item.detail" [appBorder]="card.attr.key" nz-popover [nzContent]="card.name" (click)="selectItem(card.id)">
+              <img class="avatar" [src]="card.avatar" [alt]="card.name">
+            </div>
           </div>
-        </div>
-        <div *ngIf="item.type === 'describe'">
-          {{item.describe}}
+          <div *ngIf="item.type === 'describe'">
+            {{item.describe}}
+          </div>
         </div>
       </div>
     </div>
