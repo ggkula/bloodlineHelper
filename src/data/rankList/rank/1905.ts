@@ -21,6 +21,24 @@ const rank1905: Rank[] = [
         detail : [],
         bgc: ''
     },
+    {
+        type: 'describe',
+        describe: '9.5分3幻神（战神）',
+    },
+    {
+        type: 'score',
+        score: 9,
+        sorts: [5, 4],
+        detail : [],
+        bgc: ''
+    },
+    {
+        type: 'score',
+        score: 8.5,
+        sorts: [3],
+        detail : [],
+        bgc: ''
+    },
 ]
 
 export default rank1905

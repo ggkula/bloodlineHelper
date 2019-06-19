@@ -22,6 +22,9 @@ import { SupportUsComponent } from './page/support-us/support-us.component';
 import { RankingComponent } from './component/ranking/ranking.component';
 import { DlPicDirective } from './directive/dl-pic.directive';
 import { BorderDirective } from './directive/border.directive';
+import { SkillBoardComponent } from './component/skill-board/skill-board.component';
+import { UpdateInfoListComponent } from './page/update-info-list/update-info-list.component';
+import { UpdateInfoDetailComponent } from './page/update-info-detail/update-info-detail.component';
 
 registerLocaleData(zh);
 
@@ -40,7 +43,10 @@ registerLocaleData(zh);
     SupportUsComponent,
     RankingComponent,
     DlPicDirective,
-    BorderDirective
+    BorderDirective,
+    SkillBoardComponent,
+    UpdateInfoListComponent,
+    UpdateInfoDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@
  *      value：string 值（中文）
  *  }卡牌属性
  *  job: string 职业
+ *  relation：和此卡相关的所有独立id的卡（本卡和其他皮肤）
  *  transfer: string[] 转职
  *  camp：string 阵营
  *  avatar：string节奏榜上的头像
@@ -22,12 +23,13 @@ export interface  EachData {
     name: string,
     id: number,
     attr: Attrs,
+    relation?: number[],
     job: string,
     transfer: string[],
     camp: string,
     avatar: string,
     card: Cards[],
-    skill: string,
+    skill: Skill[],
     resolves: Resolves[]
 }
 
@@ -50,4 +52,17 @@ export interface Resolves {
     auth: string,
     date: string,
     paragraph: string[]
+}
+
+/*
+*
+*
+*
+* */
+export interface Skill {
+    skinName: string,
+    leader: string,
+    talent: string,
+    utl: string,
+    fate: string
 }

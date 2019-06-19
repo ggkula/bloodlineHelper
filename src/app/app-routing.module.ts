@@ -8,6 +8,8 @@ import {NewPlayerComponent} from "./page/new-player/new-player.component";
 import {ListDetailComponent} from "./page/list-detail/list-detail.component";
 import {AboutUsComponent} from "./page/about-us/about-us.component";
 import {SupportUsComponent} from "./page/support-us/support-us.component";
+import {UpdateInfoListComponent} from "./page/update-info-list/update-info-list.component";
+import {UpdateInfoDetailComponent} from "./page/update-info-detail/update-info-detail.component";
 
 const routes: Routes = [
   {
@@ -37,7 +39,15 @@ const routes: Routes = [
   {
     path: 'supportUs',
     component: SupportUsComponent
-  }
+  },
+  {
+    path: 'updateInfoList',
+    component: UpdateInfoListComponent
+  },
+  {
+    path: 'updateInfoDetail',
+    component: UpdateInfoDetailComponent
+  },
 ];
 
 @NgModule({

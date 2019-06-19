@@ -22,7 +22,12 @@ export class IndexComponent implements OnInit {
       name: '新手指引',
       route: '/newPlayer',
       color: '#B277BD'
-    }
+    },
+    // {
+    //   name: '更新列表',
+    //   route: '/updateInfoList',
+    //   color: '#9283E5'
+    // }
   ];
   constructor() { }
 

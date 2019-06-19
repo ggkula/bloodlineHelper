@@ -1,3 +1,11 @@
 <footer class="footer">
   <span routerLink="/aboutUs" class="aboutUs">©圆桌节奏团</span>
+  <button nz-button [nzType]="'primary'" (click)="showModal()" class="right">bug反馈</button>
 </footer>
+<nz-modal [(nzVisible)]="isVisible" nzTitle="bug反馈" [nzFooter]="null" (nzOnCancel)="closeModal()">
+  <p>反馈bug或者联系我们请使用以下联系方式</p>
+  <p><a routerLink="/supportUs">赞助我们</a> 大家的支持就是我们最大的动力</p>
+  <p>QQ：335631892（过过的qq）</p>
+  <p>QQ群：627969179（寒寒的血族交流群）</p>
+  <p>Email：s335631892@icloud.com</p>
+</nz-modal>

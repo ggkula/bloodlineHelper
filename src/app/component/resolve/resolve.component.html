@@ -14,7 +14,14 @@
     </nz-tab>
     <nz-tab nzTitle="查看技能">
       <div class="skill">
-        <img [src]="selectedCard.skill" [alt]="selectedCard.name + '技能'" class="img">
+        <div *ngIf="selectedCard.skill.length === 1">
+          <app-skill-board [skill]="selectedCard.skill[0]"></app-skill-board>
+        </div>
+        <nz-tabset *ngIf="selectedCard.skill.length >1">
+          <nz-tab *ngFor="let skill of selectedCard.skill" [nzTitle]="skill.skinName">
+            <app-skill-board [skill]="skill"></app-skill-board>
+          </nz-tab>
+        </nz-tabset>
       </div>
     </nz-tab>
     <nz-tab nzTitle="极限面板">

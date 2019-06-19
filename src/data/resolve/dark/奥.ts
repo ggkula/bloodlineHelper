@@ -18,7 +18,13 @@ const theData: EachData = {
         type: '20攻击舞姬奥里西斯',
         src: '/assets/card/dark/奥w.jpg'
     }],
-    skill: '/assets/skill/dark/奥.png',
+    skill: [{
+        skinName: '奥里西斯',
+        leader: '阵营为“旅人”的队员伤害增加40%，每回合回复7%生命',
+        talent: '攻击时对非牧师敌人造成重伤效果（治疗效果降低50%，受到的伤害增加10%），持续2回合',
+        utl: '奥里西斯对敌方全体造成中量暗属性伤害',
+        fate: '战斗开始时若满怒，则伤害增加50%，持续2回合,否则增加100点怒气，但自身伤害降低50%，持续1回合'
+    }],
     resolves: [
         {
             auth: '寒寒',
