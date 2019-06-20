@@ -18,7 +18,7 @@ const theData: EachData = {
         type: '20攻击学园长德丽莎',
         src: '/assets/card/light/德g.jpg'
     }, {
-        type: '20攻击饮命者莉萝艾',
+        type: '全8学园长德丽莎',
         src: '/assets/card/light/德8.jpg'
     }],
     skill: [{

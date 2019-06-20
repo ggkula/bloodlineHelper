@@ -35,9 +35,45 @@ const rank1905: Rank[] = [
     {
         type: 'score',
         score: 8.5,
-        sorts: [3],
+        sorts: [6, 3, 8, 7],
         detail : [],
         bgc: ''
+    },
+    {
+        type: 'score',
+        score: 8,
+        sorts: [],
+        detail : [],
+        bgc: ''
+    },
+    {
+        type: 'score',
+        score: 7.5,
+        sorts: [],
+        detail : [],
+        bgc: ''
+    },
+    {
+        type: 'describe',
+        describe: '7.5分以上卡牌适用性全面，单卡强度很高，不是特别依赖和其他卡的配合',
+    },
+    {
+        type: 'score',
+        score: 7,
+        sorts: [],
+        detail : [],
+        bgc: ''
+    },
+    {
+        type: 'score',
+        score: 6.5,
+        sorts: [],
+        detail : [],
+        bgc: ''
+    },
+    {
+        type: 'describe',
+        describe: '6.5分以上卡牌比上不足比下有余，所以单独提出来，通常是强队的替补或是特殊高强队伍核心',
     },
 ]
 
