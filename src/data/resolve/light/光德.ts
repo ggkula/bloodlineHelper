@@ -9,7 +9,7 @@ const theData: EachData = {
     },
     job: '战士',
     transfer: ['学院长', '战神', '饮命者'],
-    camp: '异族',
+    camp: '异世界',
     avatar: '/assets/avatar/light/德丽莎.png',
     card: [{
         type: '20血量学园长德丽莎',

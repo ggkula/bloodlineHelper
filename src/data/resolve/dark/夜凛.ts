@@ -9,7 +9,7 @@ const theData: EachData = {
     },
     job: '刺客',
     transfer: ['鬼剑', '影舞者'],
-    camp: '异族',
+    camp: '异世界',
     avatar: '/assets/avatar/dark/夜凛.png',
     card: [{
         type: '20攻击鬼剑凛音',

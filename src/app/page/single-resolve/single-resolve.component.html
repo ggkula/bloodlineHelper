@@ -1,5 +1,17 @@
-<p>
-
-
-  建设中！
-</p>
+<div>
+  <div>
+    <span>过滤器：</span>
+    <nz-select style="width: 100px;" [(ngModel)]="attr" nzAllowClear nzPlaceHolder="属性过滤">
+      <nz-option *ngFor="let attr of attrList" [nzValue]="attr.key" [nzLabel]="attr.value"></nz-option>
+    </nz-select>
+    <nz-select style="width: 100px;" [(ngModel)]="job" nzAllowClear nzPlaceHolder="职业过滤">
+      <nz-option *ngFor="let job of jobList" [nzValue]="job" [nzLabel]="job"></nz-option>
+    </nz-select>
+    <nz-select style="width: 100px;" [(ngModel)]="camp" nzAllowClear nzPlaceHolder="阵营过滤">
+      <nz-option *ngFor="let camp of campList" [nzValue]="camp" [nzLabel]="camp"></nz-option>
+    </nz-select>
+  </div>
+  <div>
+    建设中
+  </div>
+</div>

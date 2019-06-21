@@ -11,8 +11,12 @@ import id5 from './resolve/dark/夜凛'
 import id6 from './resolve/dark/熔融'
 import id7 from './resolve/fire/御'
 import id8 from './resolve/fire/涅莉'
+import id9 from './resolve/tree/艾斯卡'
+import id10 from './resolve/dark/黛'
+import id11 from './resolve/fire/焚'
+import id12 from './resolve/fire/微热'
 
-const dataList: EachData[] = [id0, id1, id2, id3, id4, id5, id6, id7, id8];
+const dataList: EachData[] = [id0, id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12];
 
 export default dataList.sort((a, b) => {
     return a.id - b.id

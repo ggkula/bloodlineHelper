@@ -23,7 +23,7 @@ const rank1905: Rank[] = [
     },
     {
         type: 'describe',
-        describe: '9.5分3幻神（战神）',
+        describe: '9.5分3幻神（战神），绝对的核心，游戏中80%的卡都是围绕这3张在构筑。虽然可能某个体系在某个环境不强，但是不影响这张卡依然是核心的地位。',
     },
     {
         type: 'score',
@@ -42,7 +42,7 @@ const rank1905: Rank[] = [
     {
         type: 'score',
         score: 8,
-        sorts: [],
+        sorts: [11, 10, 9, 12],
         detail : [],
         bgc: ''
     },
