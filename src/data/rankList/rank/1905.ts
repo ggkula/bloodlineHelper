@@ -42,14 +42,14 @@ const rank1905: Rank[] = [
     {
         type: 'score',
         score: 8,
-        sorts: [11, 10, 9, 12],
+        sorts: [14, 13, 11, 10, 9, 12],
         detail : [],
         bgc: ''
     },
     {
         type: 'score',
         score: 7.5,
-        sorts: [],
+        sorts: [17, 15, 16],
         detail : [],
         bgc: ''
     },
