@@ -30,7 +30,7 @@ const theData: EachData = {
     }],
     resolves: [
         {
-            auth: 'null',
+            auth: '寒寒',
             date: '19年6月21日',
             paragraph: [
                 '大家好，我是自己回合能输出，别人回合能输出，睡着能输出，麻痹能输出，石化也还是能输出，除了水卡和炉心谁都挡不住我——的黑塔八页微热巫女。',
