@@ -24,10 +24,10 @@ const theData: EachData = {
     }],
     resolves: [
         {
-            auth: 'null',
-            date: '19年6月21日',
+            auth: '',
+            date: '',
             paragraph: [
-                '建设中'
+                ''
             ]
         }
     ]

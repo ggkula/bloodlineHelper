@@ -12,7 +12,7 @@ const theData: EachData = {
     camp: '异世界',
     avatar: '/assets/avatar/light/琪亚娜.png',
     card: [{
-        type: '20攻击神枪手莉娅丝',
+        type: '20攻击游侠琪亚娜',
         src: '/assets/card/light/琪亚娜.jpg'
     }],
     skill: [{

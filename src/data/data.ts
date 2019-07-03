@@ -34,8 +34,14 @@ import id28 from './resolve/fire/火德'
 import id29 from './resolve/fire/澪琉'
 import id30 from './resolve/thunder/永罪之裏'
 import id31 from './resolve/water/辉夜'
+import id32 from './resolve/water/凛音'
+import id33 from './resolve/fire/KK'
+import id34 from './resolve/dark/鲜血'
+import id35 from './resolve/tree/晓'
+import id36 from './resolve/thunder/布洛妮娅'
+import id37 from './resolve/thunder/周茹冰'
 
-const dataList: EachData[] = [id0, id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31];
+const dataList: EachData[] = [id0, id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37];
 
 export default dataList.sort((a, b) => {
     return a.id - b.id
