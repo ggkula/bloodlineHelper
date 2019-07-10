@@ -16,7 +16,7 @@ const theData: EachData = {
         src: '/assets/card/dark/佑希.jpg'
     }],
     skill: [{
-        skinName: '锌镉熔融',
+        skinName: '佑希',
         leader: '暗属性与射手队员伤害增加35%（暗射手获得双倍效果）',
         talent: '后排射手队友暴击率增加20%，若转职为风吟者，则职业技能效果翻倍',
         utl: '佑希对敌方单体造成超大量暗属性伤害',
