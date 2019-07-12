@@ -2,28 +2,28 @@ import {EachData} from '../../../app/modal/dataModal'
 
 const theData: EachData = {
     name: '导师',
-    id: 39,
+    id: 44,
     attr: {
         key: 'water',
         value: '水'
     },
     job: '牧师',
     transfer: ['执政官', '神使'],
-    camp: '法塔',
+    camp: '圣地',
     avatar: '/assets/avatar/water/精神导师.png',
     card: [{
-        type: '20攻击武姬辉夜',
-        src: '/assets/card/water/辉夜.jpg'
+        type: '20攻击神使精神导师',
+        src: '/assets/card/water/导师.jpg'
     }, {
-        type: '20攻击执政官辉夜',
-        src: '/assets/card/water/辉夜z.jpg'
+        type: '全属性8神使精神导师',
+        src: '/assets/card/water/导师8.jpg'
     }],
     skill: [{
-        skinName: '卡莉丝',
-        leader: '所有队员每回合恢复14%生命与7点怒气',
-        talent: '辉夜升级装备的速度提高,战中获得的怒气增加20%,战后获得的经验值增加100%',
-        utl: '辉夜对敌方全体造成少量水属性伤害，并诅咒女性敌人2回合',
-        fate: '进入战斗后随机幻化2名敌人，若其为女性则石化一回合，且受击概率降低'
+        skinName: '精神导师',
+        leader: '所有队员攻击时无视敌方30%防御，男性与水属性队员防御增加30%',
+        talent: '男性与水属性队员战斗开始回复5%血量，持续3回合,精神导师同仇恨女士同时登场时，双方的攻击、防御增加10%',
+        utl: '精神导师对敌方单体造成大量水属性伤害，并为血量最低的3名队友恢复15%生命',
+        fate: '精神导师位于队伍前排时，受击概率略微增加，受到的伤害降低20%'
     }],
     resolves: [
         {

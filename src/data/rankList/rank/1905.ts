@@ -60,20 +60,59 @@ const rank1905: Rank[] = [
     {
         type: 'score',
         score: 7,
-        sorts: [32, 33, 34, 35, 36, 37, 19],
+        sorts: [32, 33, 34, 35, 36, 37, 38, 39, 40 ,41, 42, 19],
         detail : [],
         bgc: ''
     },
     {
         type: 'score',
         score: 6.5,
-        sorts: [],
+        sorts: [44, 43],
         detail : [],
         bgc: ''
     },
     {
         type: 'describe',
         describe: '6.5分以上卡牌比上不足比下有余，所以单独提出来，通常是强队的替补或是特殊高强队伍核心',
+    },
+    {
+        type: 'score',
+        score: 6,
+        sorts: [45],
+        detail : [],
+        bgc: ''
+    },
+    {
+        type: 'score',
+        score: 5.5,
+        sorts: [],
+        detail : [],
+        bgc: ''
+    },
+    {
+        type: 'score',
+        score: 5,
+        sorts: [],
+        detail : [],
+        bgc: ''
+    },
+    {
+        type: 'score',
+        score: 4.5,
+        sorts: [],
+        detail : [],
+        bgc: ''
+    },
+    {
+        type: 'score',
+        score: 4,
+        sorts: [],
+        detail : [],
+        bgc: ''
+    },
+    {
+        type: 'describe',
+        describe: '4分以上卡牌，强度优先，或是对策卡，有明显弱点或比较依赖阵容搭配',
     },
 ]
 
