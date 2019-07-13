@@ -1,0 +1,109 @@
+.box{
+  .filter{
+    margin: 10px auto 0;
+    width: 92%;
+    @media (max-width: 479px) {
+      .title{
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+        //margin-right: 5%;
+        width: 30%;
+        font-size: 16px;
+      }
+      .selectBox {
+        width: 69%;
+        vertical-align: middle;
+        display: inline-block;
+        nz-select{
+          margin: 2px 6px;
+        }
+        button{
+          margin: 2px 6px;
+        }
+      }
+    }
+    @media (min-width: 480px) {
+      text-align: center;
+      .title{
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .selectBox{
+        vertical-align: middle;
+        display: inline-block;
+        nz-select{
+          margin: 2px 6px;
+        }
+        button{
+          margin: 2px 6px;
+        }
+      }
+    }
+  }
+  .attention{
+    margin: 4px auto;
+    width: 92%;
+    color: red;
+    font-size: 16px;
+    text-align: center;
+  }
+  .helper{
+    margin: 4px auto;
+    width: 92%;
+    font-size: 16px;
+    text-align: center;
+  }
+  .cardList{
+    border: 1px solid #e3e3e3;
+    height: calc(100vh - 270px);
+    margin: 0 auto;
+    max-width: 802px;
+    //width: 100%;
+    overflow: scroll;
+    .item{
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      display: inline-block;
+      img{
+        z-index: -1;
+        position: relative;
+        width: 60%;
+        top: 16px;
+        left: 16px;
+
+      }
+    }
+    .dark{
+      // 暗属性的位置
+      background: url("../../../assets/other/border.png") 6px -510px no-repeat;
+      background-size: 95% auto;
+    }
+    .light{
+      // 光属性的位置
+      background: url("../../../assets/other/border.png") 6px -688px no-repeat;
+      background-size: 95% auto;
+    }
+    .thunder{
+      // 雷属性的位置
+      background: url("../../../assets/other/border.png") 6px -882px no-repeat;
+      background-size: 95% auto;
+    }
+    .tree{
+      // 木属性的位置
+      background: url("../../../assets/other/border.png") 6px -782px no-repeat;
+      background-size: 95% auto;
+    }
+    .fire{
+      // 火属性的位置
+      background: url("../../../assets/other/border.png") 6px -594px no-repeat;
+      background-size: 95% auto;
+    }
+    .water{
+      // 水属性的位置
+      background: url("../../../assets/other/border.png") 6px -418px no-repeat;
+      background-size: 95% auto;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
 import {BasicService} from "../../server/basic.service";
+import dataList from '../../../data/data'
+import {EachData} from "../../modal/dataModal";
 
 @Component({
   selector: 'app-single-resolve',
@@ -33,6 +35,11 @@ export class SingleResolveComponent implements OnInit {
   campList = ['法塔', '圣地', '异族', '旅人', '异世界'];
   windowSize: boolean;
 
+  dataList: EachData[] = dataList;
+  openModal: boolean;
+  width: number;
+  selectedId: number;
+
   constructor(
       private basicService : BasicService,
   ) { }
@@ -42,6 +49,38 @@ export class SingleResolveComponent implements OnInit {
 
   ngDoCheck() {
     this.windowSize = this.basicService.browser.getValue();
+    this.width = Math.floor(window.innerWidth / 80)
   }
 
+  selectItem(id: number) {
+    this.openModal = true;
+    this.selectedId = id;
+  }
+
+  closeModalFunc() {
+    this.openModal = false;
+  }
+
+  filter() {
+    // console.log(this.attr, this.job, this.camp)
+    this.dataList = dataList.filter(value => {
+      if (this.attr) {
+        return value.attr.key === this.attr
+      } else {
+        return value
+      }
+    }).filter(value => {
+      if (this.job) {
+        return value.job === this.job
+      } else {
+        return value
+      }
+    }).filter(value => {
+      if (this.camp) {
+        return value.camp === this.camp
+      } else {
+        return value
+      }
+    })
+  }
 }

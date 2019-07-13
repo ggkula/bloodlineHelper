@@ -1,17 +1,32 @@
-<div>
-  <div>
-    <span>过滤器：</span>
-    <nz-select style="width: 100px;" [(ngModel)]="attr" nzAllowClear nzPlaceHolder="属性过滤">
-      <nz-option *ngFor="let attr of attrList" [nzValue]="attr.key" [nzLabel]="attr.value"></nz-option>
-    </nz-select>
-    <nz-select style="width: 100px;" [(ngModel)]="job" nzAllowClear nzPlaceHolder="职业过滤">
-      <nz-option *ngFor="let job of jobList" [nzValue]="job" [nzLabel]="job"></nz-option>
-    </nz-select>
-    <nz-select style="width: 100px;" [(ngModel)]="camp" nzAllowClear nzPlaceHolder="阵营过滤">
-      <nz-option *ngFor="let camp of campList" [nzValue]="camp" [nzLabel]="camp"></nz-option>
-    </nz-select>
+<div class="box">
+  <div class="filter">
+    <span class="title">过滤器：</span>
+    <div class="selectBox">
+      <nz-select style="width: 100px;" [(ngModel)]="attr" nzAllowClear nzPlaceHolder="属性过滤" (ngModelChange)="filter()">
+        <nz-option *ngFor="let attr of attrList" [nzValue]="attr.key" [nzLabel]="attr.value"></nz-option>
+      </nz-select>
+      <nz-select style="width: 100px;" [(ngModel)]="job" nzAllowClear nzPlaceHolder="职业过滤" (ngModelChange)="filter()">
+        <nz-option *ngFor="let job of jobList" [nzValue]="job" [nzLabel]="job"></nz-option>
+      </nz-select>
+      <nz-select style="width: 100px;" [(ngModel)]="camp" nzAllowClear nzPlaceHolder="阵营过滤" (ngModelChange)="filter()">
+        <nz-option *ngFor="let camp of campList" [nzValue]="camp" [nzLabel]="camp"></nz-option>
+      </nz-select>
+      <button style="width: 100px;" nz-button nzType="primary">清除筛选</button>
+    </div>
   </div>
-  <div>
-    建设中
+  <div class="attention">注意：本站卡牌资料还在录入中！</div>
+  <div class="helper">点击头像查看评测</div>
+  <div class="cardList" [style.width]="width * 80 + 2 + 'px'">
+    <div class="item" *ngFor="let card of dataList" [appBorder]="card.attr.key" nz-popover [nzContent]="card.name" (click)="selectItem(card.id)">
+      <img class="avatar" [src]="card.avatar" [alt]="card.name">
+    </div>
   </div>
 </div>
+
+<nz-modal nzTitle="卡牌详情"
+          [(nzVisible)]="openModal"
+          [nzFooter]="null" [nzStyle]="{ top: '40px' }"
+          [nzBodyStyle]="{height: '80vh',overflow: 'scroll'}"
+          (nzOnCancel)="closeModalFunc()">
+  <app-resolve class="right" [selectedId]='selectedId'></app-resolve>
+</nz-modal>
