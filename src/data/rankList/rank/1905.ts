@@ -78,7 +78,7 @@ const rank1905: Rank[] = [
     {
         type: 'score',
         score: 6,
-        sorts: [45],
+        sorts: [56, 45, 57, 58, 59],
         detail : [],
         bgc: ''
     },
