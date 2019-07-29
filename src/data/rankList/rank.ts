@@ -5,8 +5,16 @@
 import {RankModal} from '../../app/modal/rankModal'
 
 import rank1905 from './rank/1905'
+import rank1907 from './rank/1907'
 
 const rankList: RankModal[] = [
+    // {
+    //     title: '19年7月节奏榜',
+    //     year: 19,
+    //     month: 7,
+    //     download: '/assets/rank/1907.jpg',
+    //     rank: rank1905
+    // },
     {
         title: '19年5月节奏榜',
         year: 19,
