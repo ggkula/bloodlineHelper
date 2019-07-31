@@ -12,7 +12,7 @@ const theData: EachData = {
     camp: '圣地',
     avatar: '/assets/avatar/thunder/布洛妮娅.png',
     card: [{
-        type: '20攻击战神布洛妮娅',
+        type: '20攻击饮命者布洛妮娅',
         src: '/assets/card/thunder/布洛妮娅.jpg'
     }],
     skill: [{

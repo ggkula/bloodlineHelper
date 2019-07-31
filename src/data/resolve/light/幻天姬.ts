@@ -12,7 +12,7 @@ const theData: EachData = {
     camp: '旅人',
     avatar: '/assets/avatar/light/幻天姬.png',
     card: [{
-        type: '20攻击影舞者苏苏',
+        type: '20攻击影舞者幻天姬',
         src: '/assets/card/light/幻天姬.jpg'
     }],
     skill: [{
