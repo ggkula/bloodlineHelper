@@ -11,7 +11,7 @@
       <nz-select style="width: 100px;" [(ngModel)]="camp" nzAllowClear nzPlaceHolder="阵营过滤" (ngModelChange)="filter()">
         <nz-option *ngFor="let camp of campList" [nzValue]="camp" [nzLabel]="camp"></nz-option>
       </nz-select>
-      <button style="width: 100px;" nz-button nzType="primary">清除筛选</button>
+      <button style="width: 100px;" nz-button nzType="primary" (click)="clearAll()">清除筛选</button>
     </div>
   </div>
   <div class="attention">注意：本站卡牌资料还在录入中！</div>

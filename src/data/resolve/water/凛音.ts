@@ -4,7 +4,7 @@ const theData: EachData = {
     name: '凛音',
     id: 32,
     attr: {
-        key: 'dark',
+        key: 'water',
         value: '水'
     },
     job: '刺客',

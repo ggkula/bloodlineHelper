@@ -10,7 +10,7 @@ const theData: EachData = {
     job: '法师',
     transfer: ['巫师', '术士'],
     camp: '法塔',
-    avatar: '/assets/avatar/tree/蒂莉娅.png',
+    avatar: '/assets/avatar/tree/炎夏-蒂莉娅.png',
     card: [{
         type: '20攻击巫师蒂莉娅',
         src: '/assets/card/tree/蒂莉娅.png'

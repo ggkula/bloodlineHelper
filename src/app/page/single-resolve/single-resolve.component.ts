@@ -83,4 +83,12 @@ export class SingleResolveComponent implements OnInit {
       }
     })
   }
+
+  clearAll() {
+    this.dataList = dataList;
+    this.attr = undefined;
+    this.job = undefined;
+    this.camp = undefined;
+    console.log(this.attr, this.job, this.camp);
+  }
 }
