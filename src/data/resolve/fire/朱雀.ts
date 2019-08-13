@@ -15,7 +15,7 @@ const theData: EachData = {
         type: '20血量神使留姬',
         src: '/assets/card/fire/朱雀.jpg'
     }, {
-        type: '20攻击神使朱雀',
+        type: '20攻击神使留姬',
         src: '/assets/card/fire/朱雀g.jpg'
     }],
     skill: [{

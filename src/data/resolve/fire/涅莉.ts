@@ -7,7 +7,7 @@ const theData: EachData = {
         key: 'fire',
         value: '火'
     },
-    job: '牧师',
+    job: '法师',
     transfer: ['巫师', '贤者'],
     camp: '异族',
     avatar: '/assets/avatar/fire/涅莉.png',

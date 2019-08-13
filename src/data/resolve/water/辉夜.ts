@@ -19,7 +19,7 @@ const theData: EachData = {
         src: '/assets/card/water/辉夜z.jpg'
     }],
     skill: [{
-        skinName: '卡莉丝',
+        skinName: '辉夜',
         leader: '所有队员每回合恢复14%生命与7点怒气',
         talent: '辉夜升级装备的速度提高,战中获得的怒气增加20%,战后获得的经验值增加100%',
         utl: '辉夜对敌方全体造成少量水属性伤害，并诅咒女性敌人2回合',
