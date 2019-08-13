@@ -10,7 +10,7 @@ const theData: EachData = {
     job: '牧师',
     transfer: ['神使', '执政官'],
     camp: '旅人',
-    avatar: '/assets/avatar/fire/炎夏-索菲亚.png',
+    avatar: '/assets/avatar/water/炎夏-索菲亚.png',
     card: [{
         type: '20血量神使索菲亚',
         src: '/assets/card/fire/索菲亚.jpg'
