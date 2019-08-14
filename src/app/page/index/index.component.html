@@ -1,4 +1,11 @@
 <section class="body">
+  <div class="swiper">
+    <nz-carousel nzAutoPlay nzAutoPlaySpeed="5000">
+      <div nz-carousel-content *ngFor="let index of news">
+        <h3>{{ index }}</h3>
+      </div>
+    </nz-carousel>
+  </div>
   <div class="card">
     <div *ngFor="let item of card" [routerLink]="item.id ? [item.route, 0] : item.route" [style.background]="item.color" class="item">{{item.name}}</div>
   </div>

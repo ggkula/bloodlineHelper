@@ -14,7 +14,7 @@ import {BasicService} from "../../server/basic.service";
 export class RankingComponent implements OnInit {
   rankList: RankModal[] = rankList; // 节奏榜总表
   dataList: EachData[] = dataList;  // 数据总表
-  rank: RankModal;  // 当月节奏榜
+  rank: RankModal | null;  // 当月节奏榜
   rankId: number;  // 节奏榜id（当月id）
   openModal: boolean = false; // 弹窗开关
   selectedId: number; // 选中的单卡id
@@ -28,17 +28,7 @@ export class RankingComponent implements OnInit {
 
   ngOnInit() {
     this.rankId = parseInt(this.route.snapshot.paramMap.get('id'));
-    this.rank = this.rankList[this.rankId];
-    this.rank.rank.forEach(((value, index) => {
-      if(value.type === 'score' && value.detail.length === 0) {
-        value.sorts.forEach((v) => {
-          value.detail.push(this.dataList[v])
-        });
-        if(value.sorts.length > this.maxWidth) {
-          this.maxWidth = value.sorts.length;
-        }
-      }
-    }));
+    this.changeRank();
   }
 
   selectItem(id: number) {
@@ -52,5 +42,20 @@ export class RankingComponent implements OnInit {
 
   closeModalFunc() {
     this.openModal = false;
+  }
+
+  changeRank() {
+    this.rank = this.rankList[this.rankId];
+    this.rank.rank.forEach(((value, index) => {
+      if(value.type === 'score') {
+        value.detail = [];
+        value.sorts.forEach((v) => {
+          value.detail.push(this.dataList[v])
+        });
+        if(value.sorts.length > this.maxWidth) {
+          this.maxWidth = value.sorts.length;
+        }
+      }
+    }));
   }
 }

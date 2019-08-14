@@ -3,6 +3,9 @@
     {{rank.title}}
 <!--    <button nz-button appDlPic nzType="primary" nzSize="small" [name]="rank.title" [path]="rank.download">下载本月节奏榜</button>-->
   </h4>
+  <nz-select style="width: 100px;" [(ngModel)]="rankId" nzAllowClear nzPlaceHolder="快速切换" (ngModelChange)="changeRank()">
+    <nz-option *ngFor="let item of rankList;let i = index" [nzValue]="i" [nzLabel]="item.title"></nz-option>
+  </nz-select>
   <div class="ranking">
     <div class="score">
       <div class="line" *ngFor="let item of rank.rank">

@@ -1,5 +1,7 @@
-<p>
-
-
-  建设中！
-</p>
+<div class="box">
+  <div class="wrap">
+      <div *ngFor="let item of rankList;let i = index" class="list">
+          <a [routerLink]="['/listDetail', i]">{{item.title}}</a>
+      </div>
+  </div>
+</div>

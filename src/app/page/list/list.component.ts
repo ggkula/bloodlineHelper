@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import rankList from "../../../data/rankList/rank";
+
 
 @Component({
   selector: 'app-list',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
+  rankList = rankList;
 
   constructor() { }
 

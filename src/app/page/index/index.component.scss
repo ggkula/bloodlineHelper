@@ -2,8 +2,34 @@
   height: 100%;
   width: 100%;
   @media screen and (min-width:481px) {
+    .swiper{
+      height: 30%;
+      [nz-carousel-content] {
+        height: 100%;
+        text-align: center;
+        line-height: 160px;
+        background: #364d79;
+        color: #fff;
+        overflow: hidden;
+      }
+      ::ng-deep {
+        .slick-slider{
+          height: 100%;
+          .slick-list{
+            height: 100%;
+            .slick-track{
+              height: 100%;
+            }
+          }
+        }
+      }
+      h3 {
+        color: #fff;
+        text-align: center;
+      }
+    }
     .card{
-      height: 100%;
+      height: 70%;
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-around;
@@ -26,16 +52,42 @@
     }
   }
   @media screen and (max-width:480px) {
+    .swiper{
+      height: 30%;
+      [nz-carousel-content] {
+        height: 100%;
+        text-align: center;
+        line-height: 40px;
+        background: #364d79;
+        color: #fff;
+        overflow: hidden;
+      }
+      ::ng-deep {
+        .slick-slider{
+          height: 100%;
+          .slick-list{
+            height: 100%;
+            .slick-track{
+              height: 100%;
+            }
+          }
+        }
+      }
+      h3 {
+        color: #fff;
+        text-align: center;
+      }
+    }
     .card{
-      height: 100%;
+      height: 70%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       .item{
         width: 60vw;
-        margin: 5vh auto;
-        height: 100px;
-        line-height: 100px;
+        margin: 0 auto;
+        height: 80px;
+        line-height: 80px;
         font-size: 20px;
         text-align: center;
         color: #fff;
