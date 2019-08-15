@@ -4,7 +4,7 @@ const theData: EachData = {
     name: '索菲亚',
     id: 91,
     attr: {
-        key: 'fire',
+        key: 'water',
         value: '水'
     },
     job: '牧师',
