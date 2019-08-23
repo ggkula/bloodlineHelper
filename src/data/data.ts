@@ -108,8 +108,18 @@ import id102 from './resolve/water/米丝蒂卡'
 import id103 from './resolve/fire/一心'
 import id104 from './resolve/thunder/白虎'
 import id105 from './resolve/tree/米多利'
+import id106 from './resolve/fire/帝利亚'
+import id107 from './resolve/fire/闪耀炉心'
+import id108 from './resolve/thunder/瓦莉拉'
+import id109 from './resolve/water/塔利斯'
+import id110 from './resolve/light/乔克'
+import id111 from './resolve/thunder/雷老'
+import id112 from './resolve/thunder/艾莉丝'
+import id113 from './resolve/fire/八重樱'
+import id114 from './resolve/dark/卡尔'
+import id115 from './resolve/light/友美'
 
-const dataList: EachData[] = [id0, id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84, id85, id86, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100, id101, id102];
+const dataList: EachData[] = [id0, id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84, id85, id86, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100, id101, id102, id103, id104, id105, id106, id107, id108, id109, id110, id111, id112, id113, id114, id115];
 
 export default dataList.sort((a, b) => {
     return a.id - b.id

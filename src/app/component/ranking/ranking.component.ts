@@ -32,6 +32,7 @@ export class RankingComponent implements OnInit {
   }
 
   selectItem(id: number) {
+    console.log(id)
     if (this.basicService.browser.getValue()) {
       this.emitId.emit(id);
     } else {

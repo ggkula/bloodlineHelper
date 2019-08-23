@@ -16,7 +16,7 @@ const theData: EachData = {
         src: '/assets/card/thunder/玲玲.jpg'
     }],
     skill: [{
-        skinName: '周茹冰',
+        skinName: '玲玲',
         leader: '回合开始前，满血的队员伤害增加80%',
         talent: '最终兵器模式下，玲玲所需COST降低4点，且激活稳定射击模式：自身暴击概率降低8%，造成的伤害增加30%，自身满血时伤害提高15%',
         utl: '射出4枚“雷蛇24”追踪导弹，对敌方单体造成超大量雷属性伤害',
