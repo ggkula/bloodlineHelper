@@ -9,7 +9,7 @@ const theData: EachData = {
     },
     job: '刺客',
     transfer: ['鬼剑', '影舞者'],
-    camp: '旅人',
+    camp: '异族',
     avatar: '/assets/avatar/thunder/米蕾.png',
     card: [{
         type: '20攻击影舞者米蕾',

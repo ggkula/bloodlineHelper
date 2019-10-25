@@ -9,7 +9,7 @@ const theData: EachData = {
     },
     job: '牧师',
     transfer: ['执政官', '武姬'],
-    camp: '法塔',
+    camp: '异世界',
     avatar: '/assets/avatar/water/辉夜.png',
     card: [{
         type: '20攻击武姬辉夜',

@@ -9,7 +9,7 @@ const theData: EachData = {
     },
     job: '法师',
     transfer: ['巫师', '术士'],
-    camp: '法塔',
+    camp: '旅人',
     avatar: '/assets/avatar/fire/一心.png',
     card: [{
         type: '20攻击巫师灯蓟一心',

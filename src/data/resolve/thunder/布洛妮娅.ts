@@ -9,7 +9,7 @@ const theData: EachData = {
     },
     job: '战士',
     transfer: ['战神', '饮命者'],
-    camp: '圣地',
+    camp: '异世界',
     avatar: '/assets/avatar/thunder/布洛妮娅.png',
     card: [{
         type: '20攻击饮命者布洛妮娅',
